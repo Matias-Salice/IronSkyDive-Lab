@@ -90,7 +90,7 @@
 
     <section id="schedule">
         <h3>Schedule</h3>
-        <table>
+        <table class="schedule-table" cellpadding="0" cellspacing="0">
            <thead>
             <th>Time</th>
             <th>Monday</th>
@@ -120,7 +120,7 @@
                 <td>X</td>
                 <td>X</td>
                </tr>
-    
+
                <tr>
                 <td>15:00 - 17:00</td>
                 <td></td>
@@ -134,19 +134,37 @@
            
         </table>
         <h3>Schedule a Time Slot</h3>
+        <form class="form">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email"><br>
+            <label for="participants">Participants</label><br>
+            <input type="number" id="participants" placeholder="Number of participants"><br>
+            <label for="date">Date</label><br>
+            <input type="date" id="date"><br>
+            <label for="time">Time</label><br>
+            <select id="time">
+                <option value="select">Select Time</option>
+                <option value="9:00-11:00">9:00-11:00</option>    
+                <option value="12:00-14:00">12:00-14:00</option>            
+                <option value="15:00-17:00">15:00-17:00</option>
+            </select><br>   
+            <button type="submit">Reserve Your Slot!</button>
+        </form>
     </section>
 
     <footer class="dark-background footer">
-        <section>
+        <section class="footer-section">
             <h5>Contact Information</h5>
             <address class="address">IronSkydive <br>33 Rue la Fayette, <br>75009 Paris, <br>France <br>+33 (0) 619 193 088</address>
             <h5>Follow Us</h5>
             <ul>
-                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li ><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                <li ><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li ><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
             </ul>
         </section>
+
+        <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.7399415147906!2d-3.6984402999999992!3d40.392455999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228c1ed975ffd%3A0xabdd7c33b07aefdb!2sIronhack%3A%20Tech%20Bootcamps%20en%20Madrid!5e0!3m2!1ses!2ses!4v1711363822897!5m2!1ses!2ses" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
 </body>
